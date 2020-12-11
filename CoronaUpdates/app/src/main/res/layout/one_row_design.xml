@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_value_for_data"
+    android:background="@color/countries_data_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/date_bg_color"
+        android:textColor="@color/date_text_color"
+        android:textSize="@dimen/date_text_size"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/horizontal_divider_height"
+        android:background="@color/divider_color"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_top_inner_linearlayout"
+        android:layout_marginBottom="@dimen/margin_bottom_for_inner_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/total_cases"
+            android:layout_width="@dimen/layout_width_dim_textview"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/confirmed_cases_text_color"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_for_inner_linearlayout"/>
+        <View
+            android:layout_width="@dimen/divider_width_size"
+            android:layout_height="fill_parent"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/active_cases"
+            android:layout_width="@dimen/layout_width_dim_textview"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_for_inner_linearlayout"
+            android:textColor="@color/active_cases_text_color"
+            />
+
+        <View
+            android:layout_width="@dimen/divider_width_size"
+            android:layout_height="fill_parent"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/total_deaths"
+            android:layout_width="@dimen/layout_width_dim_textview"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_for_inner_linearlayout"
+            android:textStyle="bold"
+            android:textColor="@color/deaths_text_color"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
